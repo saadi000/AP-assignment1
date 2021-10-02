@@ -2,6 +2,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
 public class QueueTest {
 
 	@Test
@@ -34,7 +38,7 @@ public class QueueTest {
 		queue.dequeue();
 		queue.dequeue();
 		int expected=-1;
-		assertEquals(-1,expected);
+		assertEquals(expected,queue.dequeue());
 	}
 	@Test
 	public void LL_enque_test() {
@@ -66,6 +70,7 @@ public class QueueTest {
 		queue.dequeue();
 		queue.dequeue();
 		int expected=-1;
-		assertEquals(-1,expected);
+		assertEquals(expected,queue.dequeue());
 	}
 }
+
